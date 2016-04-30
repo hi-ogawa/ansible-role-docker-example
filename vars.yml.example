@@ -1,0 +1,5 @@
+---
+role_docker:
+  docker_group:
+    - ubuntu
+    - yyyy

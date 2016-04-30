@@ -1,0 +1,9 @@
+---
+- hosts: all
+  user: ubuntu
+  become: yes
+  vars_files:
+    - vars.yml
+  roles:
+    - role: 'hi-ogawa.docker'
+      docker_group: '{{ role_docker.docker_group }}'
